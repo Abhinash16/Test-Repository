@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vue js</title>
+<script src="http://cdn.jsdelivr.net/vue/2.0.3/vue.js"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+    <div id="app">
+        <h1>{{greet('morning')}}</h1>
+        <p>{{ message }}</p>
+
+        <p> Your Score: {{score}}</p>
+
+        <button v-on:click="score++">Add</button>
+        <button v-on:click="dec">Substract</button>
+        <button v-on:dblclick="dblten">Double click to add 10</button>
+        <button v-on:dblclick="minten">Doulble click to minus 10</button>
+
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
